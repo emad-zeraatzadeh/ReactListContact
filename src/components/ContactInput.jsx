@@ -10,6 +10,7 @@ export const ContactInput = ({placeholder, changeHandler, value}) => {
             value={value}
             onChange={changeHandler}
             placeholder={placeholder}
+            required
         />
     );
 };

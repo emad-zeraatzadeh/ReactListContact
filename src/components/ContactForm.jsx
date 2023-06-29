@@ -4,7 +4,6 @@ import {FaPlus} from "react-icons/fa6";
 
 export const ContactForm = ({handleContactAdd}) => {
 
-    const [list, setList] = useState([]);
     const [name, setName] = useState("")
     const [phone, setPhone] = useState("")
     const [email, setEmail] = useState("")
@@ -21,14 +20,9 @@ export const ContactForm = ({handleContactAdd}) => {
     }
 
     const submitHandler = (e) => {
+
         e.preventDefault();
-        setList([...list,{
-            id: name.length + 1,
-            name: name,
-            phone: phone,
-            email: email,
-        }])
-        handleContactAdd(list)
+        handleContactAdd(name, phone, email)
         setName("");
         setPhone("");
         setEmail("");
