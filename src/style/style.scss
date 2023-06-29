@@ -1,0 +1,49 @@
+$white: #fff;
+$black: #000;
+$nude: #F4F1DE;
+$orange: #E07A5F;
+$blue: #3D405B;
+$green: #81B29A;
+$yellow: #F2CC8F;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $nude;
+}
+
+.form {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 50px;
+
+  &__input {
+    padding: 10px 12px;
+    margin-right: 10px;
+    border: 1px solid $yellow;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.5rem;
+  }
+
+  &__btn {
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: $white;
+    background-color: $orange;
+    border: none;
+    border-radius: 5px;
+  }
+}
